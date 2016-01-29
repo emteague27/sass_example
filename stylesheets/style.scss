@@ -1,0 +1,59 @@
+$def-txtclr: #000C16; 
+	// this is the default text color for all fonts
+$def-bg: #FFFCFC;
+// offwhite background color for all pages
+$h1-sz: 45px;
+// default header font size
+$txt-sz: 27px;
+// default paragraph font size
+$pop-clr: #FF4495;
+// used on small elements for emphasis
+$pop-2: #96FFF9;
+// highlight color
+$def-font: 'Arimo', sans-serif;
+// font for all text 
+$marg-top: 3%;
+
+
+body{
+	@import 'slash';
+	background-color: $def-bg;
+	font-family: $def-font;
+	text-decoration: none;
+	
+	li{
+			list-style-type: none; 
+			font-family: $def-font;
+		}
+
+	#col-left{
+		width: 40%;
+		height: 610px;
+		float: left;
+		padding-left: 2%;
+		margin-top: $marg-top;
+
+		h1{
+			font-size: $h1-sz;
+			color: $def-txtclr;
+		}
+		p{ 
+			@extend li;
+			font-size: $txt-sz; 
+			text-align: justify;
+			margin-top: 10%;
+		}
+	}
+
+	#col-right{
+		margin-top: $marg-top;
+		float: left;
+		width: 48%;
+		padding-left: 4%;
+
+		#yeti{
+			margin-left: 18%;
+			margin-top: 5%;
+		}
+	}
+}

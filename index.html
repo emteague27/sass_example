@@ -1,0 +1,33 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Sassified</title>
+		<link href='https://fonts.googleapis.com/css?family=Arimo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	</head>
+
+	<body>
+		<div id="slash"><li class="layer" data-depth="0.40"><h1>The Yeti.</h1></li></div>
+		<div id="col-left">
+			<ul id="text">
+			<li class="layer" data-depth="0.40"><p>Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here Yeti Text goes here</p><li>
+			</ul>
+		</div>
+		<div id="col-right">
+			<ul id="yeti-float">
+				<li class="layer" data-depth="0.10" id="geo"><img src="images/geo.jpg"></li>
+				<li class="layer" data-depth="0.30" id="yeti"><img src="images/yeti.png"></li>
+			</ul>
+			
+		</div>
+
+	<script src="./parallax-master/deploy/parallax.min.js"></script>
+	<script>
+		var yeti = document.getElementById('yeti-float');
+		var parallax = new Parallax(yeti);
+		var text = document.getElementById('text');
+		var parallax2 = new Parallax(text);
+	</script>
+	</body>
+</html>

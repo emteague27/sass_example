@@ -1,0 +1,18 @@
+#slash{
+	width: 0; 
+   	height: 0; 
+   border-bottom: 100px solid $pop-clr; 
+   border-right: 1430px solid $pop-2; 
+   margin-left: -10px;
+
+   h1{
+   		@extend li;
+   		font-size: $h1-sz;
+		width: 300px;
+    	color: white;
+    	padding-top: 35px;
+    	padding-left: 20px;
+		}
+}
+
+
